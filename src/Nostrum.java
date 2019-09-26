@@ -3,23 +3,33 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.Iterator;
 
-// Nao alterar esta classe
-// Mas pode (deve!) comentar linhas com erros para poder testar o codigo que for desenvolvendo
+/**
+ * O ficheiro com o main que corre o programa. Não fornece interação co o utilizador, apenas realiza os
+ * comandos que testam as classes realizadas.
+ */
+
 
 public class Nostrum {
-
+	/**
+	*O main executa apenas o programa principal que vai testar e executar o codigo das outras classes
+	*
+	*/
 	public static void main(String[] args) throws FileNotFoundException {
 		PrintStream fl = new PrintStream(new File("solucao.txt")); 	
 		test(System.out);  // executa e escreve na consola
 		test(fl);		   // executa e escreve no ficheiro
 		fl.close(); 
 	}
-
+	
+	/**
+	*Esta função testa as funcionalidades basicas das classes criadas, sendo que realiza algumas 
+	*operações sobre estas para garantir o funcionamento correto dos padrões de desenho utilizados.
+	*Isto inclui operções que não são possiveis devido ao funcionamento correto da solução.
+	*/	
 	private static void test(PrintStream out) {
 		
 		GestorServicos gest1 = new GestorServicosStandard();
 		
-		// alinea a)
 		out.println("\nAlinea a) ----------------------------------\n");
 
 		gest1.registaServico("101", new TV("Basico", "Canais essenciais", 14.50, 20));
@@ -35,7 +45,6 @@ public class Nostrum {
 			out.println(it.next());
 		}
 		
-		// alinea b)
 		out.println("\nAlinea b) ----------------------------------\n");
 		Pacote c1 = new Pacote("TV+Net+Voz", "Pacote standard", 12);
 		c1.add(gest1.getServico("102"));
@@ -53,7 +62,7 @@ public class Nostrum {
 			out.println(s);
 		}
 		
-		// alinea c)
+
 		out.println("\nAlinea c) ----------------------------------\n");
 		Servico s1 = gest1.eliminaServico("101"); // existe
 		Servico s2 = gest1.eliminaServico("007"); // nao existe
@@ -67,12 +76,15 @@ public class Nostrum {
 			out.println(s);
 		}	
 		
-		alineaD(out);  // descomentar apos concluir alinea D
+		alineaD(out);  
 	}
 	
-	// remover em dist
-	private static void alineaD(PrintStream out) {
-		// alinea d)	
+	/**
+	 *Teste de algumas funcionalidades adicionais do programa.
+	 *
+	 */
+
+	private static void alineaD(PrintStream out) {	
 		out.println("\nAlinea d) ----------------------------------\n");
 		GestorServicos gest1 = new GestorServicosStandard();
 		GestorServicos gest2 = new GestorServicosStandard();
