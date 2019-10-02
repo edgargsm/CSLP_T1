@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['voz_15',['Voz',['../classVoz.html',1,'']]]
+  ['operacao_17',['Operacao',['../enumOperacao.html',1,'']]],
+  ['operationregister_18',['OperationRegister',['../classOperationRegister.html',1,'']]]
 ];

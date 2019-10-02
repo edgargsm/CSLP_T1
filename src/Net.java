@@ -1,4 +1,4 @@
-
+/** Classe representante de um serviço de Net */
 public class Net implements Servico{
 
 	private String nome;
@@ -6,6 +6,7 @@ public class Net implements Servico{
 	private String descricao;
 	private String velocidade;
 	
+	/** Construtor da classe */
 	public Net(String nome, String descricao, double preco, String velocidade) {
 		this.nome = nome;
 		this.preco = preco;
@@ -16,19 +17,19 @@ public class Net implements Servico{
 	
 	@Override
 	public String nome() {
-		// TODO Auto-generated method stub
+		
 		return this.nome;
 	}
 
 	@Override
 	public String descricao() {
-		// TODO Auto-generated method stub
+		
 		return this.descricao;
 	}
 
 	@Override
 	public double price() {
-		// TODO Auto-generated method stub
+		
 		return this.preco;
 	}
 

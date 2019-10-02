@@ -1,4 +1,4 @@
-
+/** Classe representante de um serviço de TV */
 public class TV implements Servico{
 
 	private String nome;
@@ -6,6 +6,7 @@ public class TV implements Servico{
 	private String descricao;
 	private int canais;
 	
+	/** Construtor da classe */
 	public TV(String nome, String descricao, double preco, int canais) {
 		this.nome = nome;
 		this.preco = preco;
@@ -16,19 +17,19 @@ public class TV implements Servico{
 	
 	@Override
 	public String nome() {
-		// TODO Auto-generated method stub
+		
 		return this.nome;
 	}
 
 	@Override
 	public String descricao() {
-		// TODO Auto-generated method stub
+		
 		return this.descricao;
 	}
 
 	@Override
 	public double price() {
-		// TODO Auto-generated method stub
+		
 		return this.preco;
 	}
 

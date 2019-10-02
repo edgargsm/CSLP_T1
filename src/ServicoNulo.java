@@ -1,21 +1,21 @@
-
+/** Classe que representa o objeto nulo da interface serviço. */ 
 public class ServicoNulo implements Servico{
 
 	@Override
 	public String nome() {
-		// TODO Auto-generated method stub
+		
 		return "";
 	}
 
 	@Override
 	public String descricao() {
-		// TODO Auto-generated method stub
+		
 		return "";
 	}
 
 	@Override
 	public double price() {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 

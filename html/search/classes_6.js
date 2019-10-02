@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['voz_28',['Voz',['../classVoz.html',1,'']]]
+  ['voz_41',['Voz',['../classVoz.html',1,'']]]
 ];

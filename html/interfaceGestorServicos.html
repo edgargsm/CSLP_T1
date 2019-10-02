@@ -68,6 +68,9 @@ $(function() {
 <div class="title">GestorServicos Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface de um gestor de serviços que vai ser responsável por operações relacionadas com a manutenção de um conjunto/registo de serviços.  
+ <a href="interfaceGestorServicos.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GestorServicos:</div>
 <div class="dyncontent">
@@ -82,25 +85,34 @@ Inheritance diagram for GestorServicos:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a876870de9579d2471db069d9b22a0183"><td class="memItemLeft" align="right" valign="top"><a id="a876870de9579d2471db069d9b22a0183"></a>
-boolean&#160;</td><td class="memItemRight" valign="bottom"><b>registaServico</b> (String key, <a class="el" href="interfaceServico.html">Servico</a> servico)</td></tr>
+boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceGestorServicos.html#a876870de9579d2471db069d9b22a0183">registaServico</a> (String key, <a class="el" href="interfaceServico.html">Servico</a> servico)</td></tr>
+<tr class="memdesc:a876870de9579d2471db069d9b22a0183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um serviço aos registados <br  />
+ <br /></td></tr>
 <tr class="separator:a876870de9579d2471db069d9b22a0183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad48f2dd6c9f2d65845de9c262ba109b0"><td class="memItemLeft" align="right" valign="top"><a id="ad48f2dd6c9f2d65845de9c262ba109b0"></a>
-boolean&#160;</td><td class="memItemRight" valign="bottom"><b>existeServico</b> (String key)</td></tr>
+boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceGestorServicos.html#ad48f2dd6c9f2d65845de9c262ba109b0">existeServico</a> (String key)</td></tr>
+<tr class="memdesc:ad48f2dd6c9f2d65845de9c262ba109b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se este serviço se encontra entre os registados. <br /></td></tr>
 <tr class="separator:ad48f2dd6c9f2d65845de9c262ba109b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b7175dbd4134346b1955f12589c787"><td class="memItemLeft" align="right" valign="top"><a id="a27b7175dbd4134346b1955f12589c787"></a>
-<a class="el" href="interfaceServico.html">Servico</a>&#160;</td><td class="memItemRight" valign="bottom"><b>eliminaServico</b> (String key)</td></tr>
+<a class="el" href="interfaceServico.html">Servico</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceGestorServicos.html#a27b7175dbd4134346b1955f12589c787">eliminaServico</a> (String key)</td></tr>
+<tr class="memdesc:a27b7175dbd4134346b1955f12589c787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um serviço aos registados. <br /></td></tr>
 <tr class="separator:a27b7175dbd4134346b1955f12589c787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5d3f68da82caf112b97050e09a4b8c"><td class="memItemLeft" align="right" valign="top"><a id="a5a5d3f68da82caf112b97050e09a4b8c"></a>
-<a class="el" href="interfaceServico.html">Servico</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getServico</b> (String key)</td></tr>
+<a class="el" href="interfaceServico.html">Servico</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceGestorServicos.html#a5a5d3f68da82caf112b97050e09a4b8c">getServico</a> (String key)</td></tr>
+<tr class="memdesc:a5a5d3f68da82caf112b97050e09a4b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devolve/Seleciona o serviço requerido. <br /></td></tr>
 <tr class="separator:a5a5d3f68da82caf112b97050e09a4b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080f50311460081943520c5a857c2867"><td class="memItemLeft" align="right" valign="top"><a id="a080f50311460081943520c5a857c2867"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRegister</b> (<a class="el" href="classOperationRegister.html">OperationRegister</a> or)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceGestorServicos.html#a080f50311460081943520c5a857c2867">setRegister</a> (<a class="el" href="classOperationRegister.html">OperationRegister</a> or)</td></tr>
+<tr class="memdesc:a080f50311460081943520c5a857c2867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleciona o registo utilizado. <br /></td></tr>
 <tr class="separator:a080f50311460081943520c5a857c2867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72b6a16cf9baca556124e99ead0a7f7"><td class="memItemLeft" align="right" valign="top"><a id="ac72b6a16cf9baca556124e99ead0a7f7"></a>
-boolean&#160;</td><td class="memItemRight" valign="bottom"><b>hasRegister</b> ()</td></tr>
+boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceGestorServicos.html#ac72b6a16cf9baca556124e99ead0a7f7">hasRegister</a> ()</td></tr>
+<tr class="memdesc:ac72b6a16cf9baca556124e99ead0a7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o serviço esta a utilizar um registo de momento. <br /></td></tr>
 <tr class="separator:ac72b6a16cf9baca556124e99ead0a7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this interface was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface de um gestor de serviços que vai ser responsável por operações relacionadas com a manutenção de um conjunto/registo de serviços. </p>
+</div><hr/>The documentation for this interface was generated from the following file:<ul>
 <li>src/GestorServicos.java</li>
 </ul>
 </div><!-- contents -->

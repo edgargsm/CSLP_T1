@@ -1,10 +1,11 @@
-
+/** Classe representante de um serviço de Voz */
 public class Voz implements Servico{
 	
 	private String nome;
 	private double preco;
 	private String descricao;
-	
+
+	/** Construtor da classe */	
 	public Voz(String nome, String descricao, double preco) {
 		this.nome = nome;
 		this.preco = preco;
@@ -14,19 +15,19 @@ public class Voz implements Servico{
 	
 	@Override
 	public String nome() {
-		// TODO Auto-generated method stub
+		
 		return this.nome;
 	}
 
 	@Override
 	public String descricao() {
-		// TODO Auto-generated method stub
+		
 		return this.descricao;
 	}
 
 	@Override
 	public double price() {
-		// TODO Auto-generated method stub
+		
 		return this.preco;
 	}
 

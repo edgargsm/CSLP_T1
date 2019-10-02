@@ -4,10 +4,12 @@ public class GestorServicosMinimo implements GestorServicos{
 
 	private GestorServicos gss;
 	
-	public GestorServicosMinimo(GestorServicos gest1) {
+	/** Constructor */
+	public GestorServicosMinimo(GestorServicos gest1){
 		this.gss = gest1;
 	}
 	
+	/** Constructor */
 	public GestorServicosMinimo() {
 		this.gss = new GestorServicosStandard();
 	}

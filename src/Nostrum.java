@@ -83,7 +83,6 @@ public class Nostrum {
 	 *Teste de algumas funcionalidades adicionais do programa.
 	 *
 	 */
-
 	private static void alineaD(PrintStream out) {	
 		out.println("\nAlinea d) ----------------------------------\n");
 		GestorServicos gest1 = new GestorServicosStandard();

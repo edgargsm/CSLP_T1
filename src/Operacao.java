@@ -1,4 +1,4 @@
-
+/** Enumerado de cada tipo de operação */
 public enum Operacao {
 	
 	REGISTO {

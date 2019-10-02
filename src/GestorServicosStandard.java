@@ -21,8 +21,7 @@ public class GestorServicosStandard implements GestorServicos {
 	};
 	
 	@Override
-	public Iterator<String> iterator() {
-		// TODO Auto-generated method stub
+	public Iterator<String> iterator() /** Devolve um iterador para esta classe */{
 		return (this).new GestorIterator();
 	}
 
@@ -63,7 +62,7 @@ public class GestorServicosStandard implements GestorServicos {
 		return null;
 	}
 	
-	private class GestorIterator implements Iterator<String>{
+	private class GestorIterator implements Iterator<String> /** Implementa uma classe iterador para esta classe */{
 		
 		private int index=0;
 		

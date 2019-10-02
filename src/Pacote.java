@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+/** Classe que representa um conjunto/pacote de servicos. */
 public class Pacote implements Servico{
 
 	private String nome;
@@ -9,12 +10,14 @@ public class Pacote implements Servico{
 	private int periodoFidelizacao;
 	private ArrayList<Servico> servicos = new ArrayList<>();
 	
+	/** Construtor da classe */
 	public Pacote(String nome, String descricao, int fidelizacao) {
 		this.nome = nome;
 		this.preco = preco;
 		this.periodoFidelizacao = fidelizacao;
 	}
 	
+	/** Adiciona um serviço ao conjunto de serviços pertencentes a um pacote. */
 	public void add(Servico serv) {
 		servicos.add(serv);
 		double precoTotal = 0.0;
@@ -26,19 +29,19 @@ public class Pacote implements Servico{
 
 	@Override
 	public String nome() {
-		// TODO Auto-generated method stub
+		
 		return this.nome;
 	}
 
 	@Override
 	public String descricao() {
-		// TODO Auto-generated method stub
+		
 		return this.descricao;
 	}
 
 	@Override
 	public double price() {
-		// TODO Auto-generated method stub
+		
 		return this.preco;
 	}
 	
